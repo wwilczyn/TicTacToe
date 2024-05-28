@@ -95,9 +95,9 @@ fun TTTScreen() {
 
     val tapPos: (Offset) -> Unit = {
         if (playerTurn.value && win.value == null) {
-            val x = (it.x / 333).toInt()
-            val y = (it.y / 333).toInt()
-            val posInMoves = x * 3 + y
+            val x = (it.x / 200).toInt()
+            val y = (it.y / 200).toInt()
+            val posInMoves = (x * 3) + y
 
             if (moves[posInMoves] == null) {
                 moves[posInMoves] = true
